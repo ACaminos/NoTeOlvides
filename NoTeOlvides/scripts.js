@@ -4,5 +4,9 @@ eventListeners();
 
 function eventListeners(){
     //Cuando se envia el formulario
-    document.querySelector('Formulario');
+    document.querySelector('Formulario').addEventListener('submit',agregarRecordatorio);
+}
+
+function agregarRecordatorio(e){
+    e.pr
 }
