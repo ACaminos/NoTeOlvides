@@ -1,0 +1,51 @@
+label{
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-size: 15pt;
+    text-align: center;
+}
+body{
+    background-image: url(https://wallpapercave.com/wp/wTwFjvw.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+aside{
+    text-align: center;
+    align-content: center;
+    margin-left: 1px;
+    height: max-content;
+    position: absolute;
+    width: min-content;
+    position: relative;
+    margin: 5px 0px -10px 10px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    font-family: 'Anton', sans-serif;
+}
+footer{
+    position: relative;
+
+    width: auto;
+    text-align: center; 
+}
+header{
+    text-align: center;
+}
+span.Alta{
+    background-color: red;
+    padding: 0px 5px 0px 5px;
+
+}
+span.Media{
+    background-color: darkgoldenrod;
+    padding: 0px 5px 0px 5px;
+}
+span.Baja{
+    background-color: green;
+    padding: 0px 5px 0px 5px;
+
+}
+textarea{
+    font-family: Cambria, 'Times New Roman';
+    resize: none;
+}
