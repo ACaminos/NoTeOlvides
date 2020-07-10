@@ -9,25 +9,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-aside{
-    text-align: center;
-    align-content: center;
-    margin-left: 1px;
-    height: max-content;
-    position: absolute;
-    width: min-content;
-    position: relative;
-    margin: 5px 0px -10px 10px;
-    padding-top: 5px;
-    padding-bottom: 8px;
-    font-family: 'Anton', sans-serif;
-}
-footer{
-    position: relative;
-
-    width: auto;
-    text-align: center; 
-}
 header{
     text-align: center;
 }
@@ -48,4 +29,26 @@ span.Baja{
 textarea{
     font-family: Cambria, 'Times New Roman';
     resize: none;
+}
+footer{
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.Container{
+    position: relative;
+    float: right;
+    width: 15rem;
+    margin: 5px 20px 5px 5px;
+}
+#Carta{
+    position: relative;
+    float: left;
+    border: 5px darkgreen solid;
+    margin: 5px 5px 50px 5px;
+    border-radius: 2%;
+    height: 555px;
 }
