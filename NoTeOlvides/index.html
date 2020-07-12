@@ -21,24 +21,18 @@
                     <textarea name="Comentario" id="comentario" cols="25" rows="10" placeholder="Ingrese aquí su tarea a recordar..." required></textarea>
                     <br>
                     <h5 class="card-title">Importancia</h5>
-                        <div class="colorRadio">
-                            <span class="Alta"> Alta <input type="radio" name="importancia" id="Alta"></span>
-                            <span class="Media"> Media <input type="radio" name="importancia" id="Media"></span>
-                            <span class="Baja"> Baja <input type="radio" name="importancia" id="Baja"></span>
-                        </div>
+                            <label><span class="Alta"> Alta <input type="radio" name="importancia" id="Alta" value="Alta"></span></label>
+                            <label><span class="Media"> Media <input type="radio" name="importancia" id="Media" value="Media"></span></label>
+                            <label><span class="Baja"> Baja <input type="radio" name="importancia" id="Baja" value="Baja"></span></label>
                         <span><hr></span>
-                    <button type="submit" class="btn btn-success">Recordar</button>
+                    <button type="submit" id="submit" class="btn btn-success">Recordar</button>
                 </div>
             </form>
         </div>
-    <div class="Container">
-            <h4>¡Recordá!</h4>
-            <div id="RecordatoriosGrabados"></div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis mollitia quas impedit praesentium quos eveniet assumenda quia? Velit dolores fugit ullam unde distinctio ex sunt impedit nostrum in dignissimos. Ratione?</p>
-            </div>
-
+        <div class="Recordatorio">
+            <h5>Tu lista</h5>
+            <textarea name="recordatorio" id="Final" cols="40" rows="21" readonly></textarea>
         </div>
-
     <footer>
         Facebook <img src="https://i.pinimg.com/originals/b3/26/b5/b326b5f8d23cd1e0f18df4c9265416f7.png" alt="" width="50px" height="50px">
         Instagram <img src="https://i.pinimg.com/originals/79/7a/fe/797afe1351677d0ad8787224e6a5be2a.png" alt="" width="50px" height="50px">
