@@ -1,3 +1,7 @@
+html {
+    min-height: 100%;
+    position: relative;
+  }
 label{
     color: white;
     font-family: 'Anton', sans-serif;
@@ -33,15 +37,12 @@ span.Baja{
     padding: 0px 5px 0px 10px;
     border-radius: 20px;
 }
-textarea{
-    font-family: Cambria, 'Times New Roman';
-    resize: none;
-}
 footer{
-    background-color: black;
+    background-color: black; 
     position: absolute;
-    bottom: 0;
     width: 100%;
+    bottom: 0;
+    height: 50px;
     text-align: center;
     margin-top: 10px;
 }
@@ -57,17 +58,35 @@ footer{
     border: 5px darkgreen solid;
     margin: 5px 5px 50px 5px;
     border-radius: 2%;
-    height: 555px;
-}
-#Final{
-    margin-right: 30%;
-    width: max-content;
-    float: right;
-    border: 5px olive solid;
-    background-position-x: right;
-    margin-top: 5px;
-    border-radius: 30px;
+    height: 570px;
 }
 .Recordatorio{
     text-align: center;
+}
+.Recordatorio>#Hight{
+    background-color: red;
+    width: 30%;
+    height: max-content;
+    margin-left: 47%;
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+.Recordatorio>#Medium{
+    background-color: darkgoldenrod;
+    width: 30%;
+    height: max-content;
+    margin-left: 47%;
+    margin-bottom: 7px;
+}
+.Recordatorio>#Low{
+    background-color: darkgreen;
+    width: 30%;
+    height: max-content;
+    margin-left: 47%;
+    margin-bottom: 7px;
+}
+.Recordatorio>h5{
+    font-size: 25pt;
+    color: white;
+    font: bold;
 }
