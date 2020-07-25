@@ -1,6 +1,7 @@
 const RecordatorioAlto = document.getElementById('Hight');
 const RecordatorioMedio = document.getElementById('Medium');
 const RecordatorioBajo = document.getElementById('Low');
+const boton= document.querySelector('borrar-recordatorio');
 
 eventListeners();
 
@@ -20,26 +21,35 @@ function agregarRecordatorio(e){
         eleccion =eleccion[i].value;
         }
     }
-    
+   
      //Intento de boton de borrar sin funcionalidad
-    const botonBorrar = document.createElement('a');
+    const botonBorrar = document.createElement("button");
     botonBorrar.classList = 'borrar-recordatorio';
-    botonBorrar.innerText= 'X';
+    botonBorrar.innerText= 'Eliminar';
 
-    const lista = document.createElement('li');
-    lista.innerText = " Titulo: " + Titulo+"\n"+ " Descripción: " + Descripcion +"\n"+ " Prioridad: " +eleccion + "\n"+"\n";
-    
     // Segun el radio button elegido va a un Div diferente con estilos diferentes
     switch (eleccion)
     {
         case 'Alta':
+                    const lista = document.createElement('li');
+                    lista.innerText = " Titulo: " + Titulo+"\n"+ " Descripción: " + Descripcion +"\n"+ " Prioridad: " +eleccion + "\n"+"\n";
+                    lista.appendChild(botonBorrar);
                     RecordatorioAlto.appendChild(lista);
+                    document.querySelector('.borrar-recordatorio').addEventListener('click',function(){
+                    console.log('Click');
+                    });
                     break;
         case 'Media':
                     RecordatorioMedio.appendChild(lista);
+                    document.querySelector('.borrar-recordatorio').addEventListener('click',function(){
+                    console.log('Click');
+                    });
                     break;
         case 'Baja':
                     RecordatorioBajo.appendChild(lista);
+                    document.querySelector('.borrar-recordatorio').addEventListener('click',function(){
+                    console.log('Click');
+                    });
                     break;
     }
 }

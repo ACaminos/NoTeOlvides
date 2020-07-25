@@ -90,3 +90,6 @@ footer{
     color: white;
     font: bold;
 }
+a.borrar{
+    width: min-content;
+}
