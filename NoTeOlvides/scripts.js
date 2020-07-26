@@ -26,30 +26,31 @@ function agregarRecordatorio(e){
     const botonBorrar = document.createElement("button");
     botonBorrar.classList = 'borrar-recordatorio';
     botonBorrar.innerText= 'Eliminar';
+    const lista = document.createElement('li');
 
     // Segun el radio button elegido va a un Div diferente con estilos diferentes
     switch (eleccion)
     {
         case 'Alta':
-                    const lista = document.createElement('li');
                     lista.innerText = " Titulo: " + Titulo+"\n"+ " Descripción: " + Descripcion +"\n"+ " Prioridad: " +eleccion + "\n"+"\n";
                     lista.appendChild(botonBorrar);
                     RecordatorioAlto.appendChild(lista);
-                    document.querySelector('.borrar-recordatorio').addEventListener('click',function(){
-                    console.log('Click');
-                    });
+                    document.querySelector(".borrar-recordatorio").addEventListener('click', ejecutarboton);
                     break;
         case 'Media':
+                    lista.innerText = " Titulo: " + Titulo+"\n"+ " Descripción: " + Descripcion +"\n"+ " Prioridad: " +eleccion + "\n"+"\n";
+                    lista.appendChild(botonBorrar);
                     RecordatorioMedio.appendChild(lista);
-                    document.querySelector('.borrar-recordatorio').addEventListener('click',function(){
-                    console.log('Click');
-                    });
+                    document.querySelector(".borrar-recordatorio").addEventListener('click', ejecutarboton);
                     break;
         case 'Baja':
+                    lista.innerText = " Titulo: " + Titulo+"\n"+ " Descripción: " + Descripcion +"\n"+ " Prioridad: " +eleccion + "\n"+"\n";
+                    lista.appendChild(botonBorrar);
                     RecordatorioBajo.appendChild(lista);
-                    document.querySelector('.borrar-recordatorio').addEventListener('click',function(){
-                    console.log('Click');
-                    });
+                    document.querySelector(".borrar-recordatorio").addEventListener('click', ejecutarboton);
                     break;
     }
+}
+function ejecutarboton(){
+    console.log('click')
 }
