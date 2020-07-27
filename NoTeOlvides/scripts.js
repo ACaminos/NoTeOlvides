@@ -54,6 +54,9 @@ function agregarRecordatorio(e){
     }
 }
 function ejecutarboton(e){
-    e.target.parentElement.remove();
-    alert("Recordatorio eliminado satisfactoriamente");
+    var opcion = confirm("Desea eliminar el recordatorio?");
+    if (opcion == true){
+        e.target.parentElement.remove();
+        alert("Recordatorio eliminado satisfactoriamente");
+    }
 }
