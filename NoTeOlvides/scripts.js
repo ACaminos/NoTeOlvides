@@ -49,10 +49,9 @@ function agregarRecordatorio(e){
                     RecordatorioBajo.appendChild(lista);
                     document.querySelector(".borrar-recordatorio").addEventListener('click', ejecutarboton);
                     break;
-        default :
-                    console.log('nada');
     }
 }
+// Mensaje para confirmar la eliminacion del recordatorio
 function ejecutarboton(e){
     var opcion = confirm("Desea eliminar el recordatorio?");
     if (opcion == true){
