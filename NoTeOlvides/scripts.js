@@ -49,8 +49,11 @@ function agregarRecordatorio(e){
                     RecordatorioBajo.appendChild(lista);
                     document.querySelector(".borrar-recordatorio").addEventListener('click', ejecutarboton);
                     break;
+        default :
+                    console.log('nada');
     }
 }
-function ejecutarboton(){
-    console.log('click')
+function ejecutarboton(e){
+    e.target.parentElement.remove();
+    alert("Recordatorio eliminado satisfactoriamente");
 }
